@@ -19,9 +19,9 @@ global.namaBot = "DarkBot" //Bebas ganti asal jangan pake font
 global.copyright = "© Dark" //Bebas ganti
 global.creAtor = "6282285357346@s.whatsapp.net" //Jangan Ganti Tar Error
 global.wm = "DarkBot̵" // Jangan Ganti Ini Thanks To
-global.autoJoin = true
+global.autoJoin = false
 global.publik = true
-global.simi = false
+global.simi = true 
 global.docType = "pdf"
 global.Ttk = "```"
 global.tdksopan = ["bang","Bang","bng","bg","Bng","Bg","Woi","woi","p","P","Pe","pe"]
@@ -57,3 +57,5 @@ console.log(chalk.redBright(`Update ${__filename}`))
 delete require.cache[file]
 require(file)
 })
+
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
